@@ -13,5 +13,5 @@ require_relative './fibonacci'
 
 FileUtils.mkdir_p('./dist')
 Flamegraph.generate('./dist/index.html') do
-  Fibonacci[2000]
+  puts Fibonacci.fib(30)
 end
